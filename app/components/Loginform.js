@@ -33,17 +33,18 @@ const Loginformpage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-cover  bg-center bg-no-repeat bg-[url('/Dreamscapes.png')]">
+    <div className="flex justify-center items-center min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/futuristic.jpg')]">
       <div className="h-96 flex items-center justify-center ">
         <div className="relative">
-          <div className="absolute -top-4 -left-4 -right-4 -bottom-4 rounded-lg  bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 shadow-lg animate-pulse"></div>
+          {/* Glassmorphism effect + neon border */}
+          <div className="absolute -top-4 -left-4 -right-4 -bottom-4 rounded-xl border-2 border-cyan-400 shadow-[0_0_40px_5px_rgba(0,255,255,0.2)] animate-pulse backdrop-blur-xl"></div>
 
           <div
             id="form-container"
-            className="bg-white/5 p-16 rounded-lg shadow-2xl w-120 relative z-12 transform transition duration-650 ease-in-out"
+            className="bg-cyan-800/20 p-16 rounded-xl w-120 relative z-12 transition duration-600 ease-in-out border border-cyan-400/40 shadow-lg shadow-cyan-400/30  backdrop-blur-xl"
           >
-            <h2 className="text-3xl font-bold mb-6 text-center text-white/5">
-              <span className="bg-gradient-to-r text-transparent from-blue-400 to-purple-300 bg-clip-text ">
+            <h2 className="text-3xl font-bold mb-6 text-center">
+              <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-cyan-400 text-transparent bg-clip-text drop-shadow-lg">
                 LogIn
               </span>
             </h2>
@@ -54,7 +55,7 @@ const Loginformpage = () => {
               <div className="mb-8">
                 <label
                   htmlFor="Email"
-                  className="block text-shadow-gray-900 text-sm font-bold mb-2"
+                  className="block text-cyan-500 text-sm font-bold mb-2"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2 inline-block w-4.5" />
                   Email
@@ -66,7 +67,7 @@ const Loginformpage = () => {
                     autoComplete="off"
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)} 
-                    className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-3 px-4 text-cyan-500 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your email/username"
                   />
                 </div>
@@ -74,7 +75,7 @@ const Loginformpage = () => {
               <div className="mb-8">
                 <label
                   htmlFor="Password"
-                  className="block text-shadow-gray-900 text-sm font-bold mb-2"
+                  className="block text-cyan-500 text-sm font-bold mb-2"
                 >
                   <FontAwesomeIcon icon={faLock} className="mr-2 inline-block w-4.5" />
                   Password
@@ -86,7 +87,7 @@ const Loginformpage = () => {
                     autoComplete="off"
                     value={password} 
                     onChange={(e) => setPassword(e.target.value)} 
-                    className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-3 px-4 text-cyan-500 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your password"
                   />
                 </div>
@@ -98,28 +99,28 @@ const Loginformpage = () => {
               <div className="flex items-center justify-center">
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                  className="bg-gradient-to-r from-cyan-700 via-blue-500 to-cyan-700 hover:from-cyan-700 hover:to-cyan-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg focus:outline-none focus:shadow-outline w-full"
                 >
                   LogIn
                 </button>
               </div>
 
               <div className="text-center mb-6 mt-6 ">
-                <Link href="/" className="text-shadow-yellow-200 hover:underline">
+                <Link href="/" className="text-cyan-400 hover:underline">
                   Forget Password
                 </Link>
               </div>
             </form>
 
-            <p className="text-center text-yellow-400 mb-6 mt-6 ">
+            <p className="text-center text-cyan-200 mb-6 mt-6 ">
               Don't have an account?
-              <Link href="/" className="text-pink-500 hover:underline mb-4 mt-6">
+              <Link href="/" className="text-cyan-500 hover:underline mb-4 mt-6">
                 Sign up
               </Link>
             </p>
 
             <div className="mt-4 mb-4">
-              <p className="text-center text-shadow-yellow-200 mt-4"> Login in with </p>
+              <p className="text-center text-cyan-400 mt-4"> Login in with </p>
               <div className="flex justify-center mt-4">
                 <Link
                   href="/"

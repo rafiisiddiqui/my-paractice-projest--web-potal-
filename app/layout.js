@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Aesthetic World",
+  title: "Admin potal",
   description: " create next by Rafii Aesthetic",
 };
 
